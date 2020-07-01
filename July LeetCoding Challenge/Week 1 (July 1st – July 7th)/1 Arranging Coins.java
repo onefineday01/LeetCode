@@ -12,8 +12,6 @@ class Solution {
         return (int)l-1;
     }
     boolean midOk(long m, long n){
-        m = m * (m+1);
-        m = m/2;
-        return m <= n;
+        return (m * (m+1))/2 <= n;
     }
 }
